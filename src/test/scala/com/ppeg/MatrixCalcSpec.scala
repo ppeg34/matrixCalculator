@@ -12,6 +12,8 @@ class MatrixCalcSpec extends FlatSpec with Matchers {
   val mapper = new ObjectMapper() with ScalaObjectMapper
   mapper.registerModule(DefaultScalaModule)
 
+  //change this to the file you'd like to test
+  //val testArray = scala.io.Source.fromFile("testfile.txt").mkString
   val testArray =
     """
       |[ [ 0, 0, 0, 0, 0 ],
